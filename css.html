@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprendendo CSS - Básico</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f8ff;
+      color: #333;
+    }
+
+    header {
+      background: #007bff; /* azul */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #007bff; /* azul */
+    }
+
+    .exemplo {
+      background: #e6f0ff;
+      padding: 10px;
+      border-radius: 8px;
+      font-family: monospace;
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #007bff; /* azul */
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Aprendendo CSS do Zero</h1>
+    <p>Guia básico para deixar seu site bonito</p>
+  </header>
+
+  <section>
+    <h2>1. O que é CSS?</h2>
+    <p>
+      CSS significa <b>Cascading Style Sheets</b>.  
+      Ele é usado para dar <b>estilo</b> ao HTML, como cores, tamanhos, fontes e layouts.
+    </p>
+
+    <h2>2. Como usar CSS</h2>
+    <p>Existem três formas principais de usar CSS:</p>
+    <ul>
+      <li><b>Inline:</b> direto dentro da tag HTML.</li>
+      <li><b>Interno:</b> dentro da tag <code>&lt;style&gt;</code> no HTML.</li>
+      <li><b>Externo:</b> em um arquivo separado <code>.css</code>.</li>
+    </ul>
+
+    <h2>3. Exemplos</h2>
+
+    <h3>Exemplo Inline:</h3>
+    <div class="exemplo">
+      &lt;p style="color: blue;"&gt;Texto azul&lt;/p&gt;
+    </div>
+
+    <h3>Exemplo Interno:</h3>
+    <div class="exemplo">
+      &lt;style&gt;<br>
+      &nbsp;&nbsp;p { color: red; }<br>
+      &lt;/style&gt;<br>
+      &lt;p&gt;Texto vermelho&lt;/p&gt;
+    </div>
+
+    <h3>Exemplo Externo:</h3>
+    <div class="exemplo">
+      /* style.css */<br>
+      body {<br>
+      &nbsp;&nbsp;background-color: lightgray;<br>
+      &nbsp;&nbsp;font-family: Arial;<br>
+      }<br>
+    </div>
+
+    <h2>4. Propriedades mais usadas</h2>
+    <ul>
+      <li><b>color:</b> cor do texto</li>
+      <li><b>background-color:</b> cor de fundo</li>
+      <li><b>font-size:</b> tamanho da fonte</li>
+      <li><b>margin:</b> espaço externo</li>
+      <li><b>padding:</b> espaço interno</li>
+      <li><b>border:</b> borda do elemento</li>
+    </ul>
+
+    <h2>5. Exemplo prático</h2>
+    <p>HTML:</p>
+    <div class="exemplo">
+      &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
+    </div>
+    <p>CSS:</p>
+    <div class="exemplo">
+      h1 {<br>
+      &nbsp;&nbsp;color: blue;<br>
+      &nbsp;&nbsp;text-align: center;<br>
+      }
+    </div>
+    <p>Resultado: Um título azul e centralizado.</p>
+
+    <h2>6. Conclusão</h2>
+    <p>
+      O CSS transforma um site simples em algo visualmente agradável.  
+      Ele trabalha junto com o HTML para criar páginas profissionais.
+    </p>
+  </section>
+
+  
+</body>
+</html>

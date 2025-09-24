@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprendendo JavaScript - Básico</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fffbea;
+      color: #333;
+    }
+
+    header {
+      background: #ffcc00; /* amarelo */
+      color: black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #ffcc00; /* amarelo */
+    }
+
+    .exemplo {
+      background: #fff4b3;
+      padding: 10px;
+      border-radius: 8px;
+      font-family: monospace;
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #ffcc00; /* amarelo */
+      color: black;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      background: #ffcc00;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background: #e6b800;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Aprendendo JavaScript do Zero</h1>
+    <p>Guia básico para deixar o site interativo</p>
+  </header>
+
+  <section>
+    <h2>1. O que é JavaScript?</h2>
+    <p>
+      JavaScript é a linguagem de programação usada para dar <b>funcionalidade</b> e <b>interatividade</b> aos sites.  
+      Com ele você pode criar botões que reagem a cliques, animações, formulários inteligentes e muito mais.
+    </p>
+
+    <h2>2. Como usar JavaScript</h2>
+    <ul>
+      <li><b>Interno:</b> dentro da tag <code>&lt;script&gt;</code> no HTML.</li>
+      <li><b>Externo:</b> em um arquivo separado <code>.js</code>.</li>
+    </ul>
+
+    <h2>3. Exemplo básico</h2>
+    <p>Um alerta ao abrir a página:</p>
+    <div class="exemplo">
+      &lt;script&gt;<br>
+      &nbsp;&nbsp;alert("Bem-vindo ao meu site!");<br>
+      &lt;/script&gt;
+    </div>
+
+    <h2>4. Manipulando conteúdo</h2>
+    <p>HTML:</p>
+    <div class="exemplo">
+      &lt;p id="texto"&gt;Texto original&lt;/p&gt;<br>
+      &lt;button onclick="mudarTexto()"&gt;Clique aqui&lt;/button&gt;
+    </div>
+
+    <p>JavaScript:</p>
+    <div class="exemplo">
+      function mudarTexto() {<br>
+      &nbsp;&nbsp;document.getElementById("texto").innerText = "O texto mudou!";<br>
+      }
+    </div>
+
+    <h2>5. Teste interativo</h2>
+    <p id="demo">Clique no botão abaixo:</p>
+    <A href="https://www.youtube.com/">
+    <button class="btn" onclick="document.getElementById('demo').innerText = 'Você clicou no botão!'">
+      Clique aqui
+    </button>
+</A>
+    <h2>6. Conclusão</h2>
+    <p>
+      O JavaScript deixa o site <b>vivo</b>.  
+      Ele funciona junto com o HTML (estrutura) e o CSS (estilo).  
+      Os três juntos são a base da web moderna.
+    </p>
+  </section>
+
+  
+
+</body>
+</html>
